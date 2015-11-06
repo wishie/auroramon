@@ -4,8 +4,8 @@ git clone https://github.com/sparklyballs/auroramon.git
 
 cd auroramon
 
-docker build --rm=true -t sparklyballs/auroramon .
+`docker build --rm=true -t sparklyballs/auroramon .`
 
-docker run -d --name=auroramon --net=host -v <path to data>:/nobody sparklyballs/auroramon
+`docker run -d --name=auroramon --net=host -v <path to data>:/nobody sparklyballs/auroramon`
 
 http://ip:8080
