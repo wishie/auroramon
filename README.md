@@ -8,4 +8,4 @@ cd auroramon
 
 `docker run -d --name=auroramon --net=host -v <path to data>:/nobody sparklyballs/auroramon`
 
-http://ip:8080
+`http://<your ip>:8080`
