@@ -2,6 +2,11 @@ FROM hurricane/dockergui:x11rdp
 
 MAINTAINER you'll be lucky sunshine <atsomeplace@onthenet.com>
 
+# set variables
+# User/Group Id gui app will be executed as default are 99 and 100
+ENV USER_ID=99 GROUP_ID=100 APP_NAME="AuroraMon" WIDTH=1420 HEIGHT=840 TERM=xterm
+
+
 ADD rc.xml /nobody/.config/openbox/rc.xml
 ADD startapp.sh /startapp.sh
 
