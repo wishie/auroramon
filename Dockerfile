@@ -10,7 +10,7 @@ ENV USER_ID=99 GROUP_ID=100 APP_NAME="AuroraMon" WIDTH=1420 HEIGHT=840 TERM=xter
 ADD rc.xml /nobody/.config/openbox/rc.xml
 ADD startapp.sh /startapp.sh
 
-# install some stuff...
+# install some stuff
 RUN apt-get update -q && \
 apt-get install libwxgtk2.8-dev g++ libwxgtk2.8-0 make -qy && \
 curl -o /tmp/aurora.zip -L http://sourceforge.net/projects/auroramonitor/files/latest/download?source=files && \
